@@ -8,7 +8,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-MONGO_TOOLS_AVAIL_VERSIONS=($(curl -s https://s3.amazonaws.com/repo.mongodb.org -f prefix=apt/debian/dists/${VERSION_CODENAME} |grep -oPu '(?<=mongodb-org\/)[0-9]*\.[0-9]*?(?=\/)'| sort -rnu))
+MONGO_TOOLS_AVAIL_VERSIONS=($(curl -s --location --request GET "https://s3.amazonaws.com/repo.mongodb.org?list-type=2&prefix=apt/debian/dists/$VERSION_CODENAME/mongodb-org/&delimiter=/" |grep -oPu '(?<=mongodb-org\/)[0-9]*\.[0-9]*?(?=\/)'| sort -rnu))
 
 if [ "${MONGO_TOOLS_VERSION}" = "latest" ] || [ "${MONGO_TOOLS_VERSION}" = "current" ] || [ "${MONGO_TOOLS_VERSION}" = "lts" ]; then
     declare -g ${MONGO_TOOLS_VERSION} = ${MONGO_TOOLS_AVAIL_VERSIONS[0]}

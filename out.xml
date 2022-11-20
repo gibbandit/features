@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <Name>repo.mongodb.org</Name>
+    <Prefix>apt/debian/dists/bullseye/mongodb-org/</Prefix>
+    <KeyCount>7</KeyCount>
+    <MaxKeys>1000</MaxKeys>
+    <Delimiter>/</Delimiter>
+    <IsTruncated>false</IsTruncated>
+    <Contents>
+        <Key>apt/debian/dists/bullseye/mongodb-org/index.html</Key>
+        <LastModified>2022-11-16T19:31:47.000Z</LastModified>
+        <ETag>&quot;bf3f9e0cb546dcee06f919fe3bc319fe&quot;</ETag>
+        <Size>3080</Size>
+        <StorageClass>STANDARD</StorageClass>
+    </Contents>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/4.2/</Prefix>
+    </CommonPrefixes>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/4.4/</Prefix>
+    </CommonPrefixes>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/5.0/</Prefix>
+    </CommonPrefixes>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/6.0/</Prefix>
+    </CommonPrefixes>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/development/</Prefix>
+    </CommonPrefixes>
+    <CommonPrefixes>
+        <Prefix>apt/debian/dists/bullseye/mongodb-org/testing/</Prefix>
+    </CommonPrefixes>
+</ListBucketResult>
