@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 # This test can be run with the following command (from the root of this repo)
