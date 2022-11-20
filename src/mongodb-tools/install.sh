@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+set -e
+
+# Clean up
+rm -rf /var/lib/apt/lists/*
+
 MONGO_TOOLS_VERSION=${VERSION:-"latest"}
 
 . /etc/os-release
