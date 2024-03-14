@@ -1,0 +1,19 @@
+{
+    "id": "watchman",
+    "version": "1.0.0",
+    "name": "A file watching service",
+    "description": "Watchman exists to watch files and record when they actually change. It can also trigger actions (such as rebuilding assets) when matching files change.",
+    "installsAfter": [
+        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter a watchman version."
+        }
+    }
+}
