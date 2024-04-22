@@ -3,7 +3,7 @@ set -ex
 
 source ./library_scripts.sh
 
-PACKAGE=${PACKAGE:-"proto"}
+PACKAGE=${PACKAGE:-"Watchman"}
 VERSION=${VERSION:-"latest"}
 INSTALLATION_FLAGS=${INSTALLATION_FLAGS:-""}
 

@@ -1,8 +1,8 @@
 {
-    "id": "proto",
+    "id": "watchman",
     "version": "1.0.0",
-    "name": "Pluggable multi-language version manager",
-    "description": "A version manager for all your favorite languages and tools. A unified toolchain. Supports Bun, Deno, Node (npm, pnpm, yarn), Rust, Go, and more.",
+    "name": "A file watching service",
+    "description": "Watchman exists to watch files and record when they actually change. It can also trigger actions (such as rebuilding assets) when matching files change.",
     "installsAfter": [
         "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2"
     ],
@@ -13,7 +13,7 @@
                 "latest"
             ],
             "default": "latest",
-            "description": "Select or enter a proto version."
+            "description": "Select or enter a watchman version."
         }
     }
 }
